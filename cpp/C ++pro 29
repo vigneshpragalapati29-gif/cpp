@@ -1,0 +1,37 @@
+
+#include <iostream> 
+#include <list> 
+#include <vector> 
+using namespace std; 
+int main() { 
+    list<int> myList; 
+    myList.push_back(10); 
+    myList.push_back(20); 
+    myList.push_front(5); 
+    cout << "List: "; 
+    for (int x : myList) 
+        cout << x << " "; 
+    cout << endl; 
+    myList.pop_front(); 
+    myList.remove(20); 
+    cout << "List after deletion: "; 
+    for (int x : myList) 
+        cout << x << " "; 
+    cout << endl; 
+      vector<int> myVector; 
+    myVector.push_back(100); 
+    myVector.push_back(200); 
+    myVector.insert(myVector.begin(), 50); 
+    cout << "Vector: "; 
+    for (int x : myVector) 
+        cout << x << " "; 
+    cout << endl;
+     myVector.erase(myVector.begin()); 
+    myVector.pop_back(); 
+    cout << "Vector after deletion: "; 
+    for (int x : myVector) 
+        cout << x << " "; 
+    cout << endl; 
+ 
+     return 0; 
+}

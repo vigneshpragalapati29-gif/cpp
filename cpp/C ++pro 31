@@ -1,0 +1,20 @@
+#include <iostream> 
+#include <map> 
+using namespace std; 
+ 
+int main() { 
+    map<string, int> m; 
+ m["apple"] = 10; 
+    m["banana"] = 20; 
+    m["cherry"] = 30; 
+ 
+    cout << m["apple"] << endl; 
+    if (m.find("banana") != m.end()) 
+        cout << "Found banana: " << m["banana"] << endl; 
+ 
+    m.erase("cherry"); 
+    for (auto it : m) 
+        cout << it.first << " " << it.second << endl; 
+ 
+    return 0; 
+}

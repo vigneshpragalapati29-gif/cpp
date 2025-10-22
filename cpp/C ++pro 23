@@ -1,0 +1,59 @@
+#include<iostream> 
+using namespace std; 
+class Shape{ 
+public: 
+virtual void draw() 
+{ 
+cout<<"drawing a generic Shape"<<endl; 
+} 
+}; 
+class circle:public Shape{ 
+public: 
+void draw()override{ 
+cout<<"drawing a circle"<<endl; 
+} 
+}; 
+class rectangle:public Shape{ 
+public: 
+void draw()override{ 
+cout<<"drawing a rectangle"<<endl; 
+} 
+};
+#include<iostream> 
+using namespace std; 
+class Shape{ 
+public: 
+virtual void draw() 
+{ 
+cout<<"drawing a generic Shape"<<endl; 
+} 
+}; 
+class circle:public Shape{ 
+public: 
+void draw()override{ 
+cout<<"drawing a circle"<<endl; 
+} 
+}; 
+class rectangle:public Shape{ 
+public: 
+void draw()override{ 
+cout<<"drawing a rectangle"<<endl; 
+} 
+};
+circle c; 
+shapeptr = &c; 
+shapeptr->draw(); 
+ 
+rectangle r; 
+shapeptr = &r; 
+shapeptr->draw(); 
+ 
+triangle t; 
+shapeptr = &t; 
+shapeptr->draw(); 
+ 
+Shape s; 
+shapeptr = &s; 
+shapeptr->draw(); 
+return 0; 
+}

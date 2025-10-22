@@ -1,0 +1,21 @@
+#include<iostream> 
+using namespace std; 
+class vehicle{
+public:
+vehicle(){
+cout<<"This is a vehicle"<<endl;}
+};
+class fourwheeler:public vehicle{ 
+public: fourwheeler(){
+cout<<"2 wheeler vehicle"<<endl;
+}
+};
+class car:public fourwheeler{ public:
+car(){
+cout<<"This 2 wheeler vehicle is a bike";
+}
+};
+int main(){
+cout<<"Roll No:25B21AI028"<<endl; 
+car obj; return 0;
+}
